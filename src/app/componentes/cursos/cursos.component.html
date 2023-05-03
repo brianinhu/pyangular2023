@@ -1,0 +1,28 @@
+<h1 style="text-align: center;">Lista de cursos</h1>
+
+<div class="container" style="text-align: center;">
+    <div class="row">
+        <div class="col">
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th>CÓDIGO</th>
+                        <th>NOMBRE</th>
+                        <th>HORAS TEÓRICAS</th>
+                        <th>HORAS PRÁCTICAS</th>
+                        <th>COSTO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let c of cursos">
+                        <td>{{c.codigo}}</td>
+                        <td>{{c.nombre}}</td>
+                        <td>{{c.horasTeoricas}}</td>
+                        <td>{{c.horasPracticas}}</td>
+                        <td>{{c.costo}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

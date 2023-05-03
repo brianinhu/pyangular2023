@@ -1,0 +1,26 @@
+<h1 style="text-align: center;">Lista de alumnos</h1>
+
+<div class="container" style="text-align: center;">
+    <div class="row">
+        <div class="col">
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th>CÓDIGO</th>
+                        <th>NOMBRE</th>
+                        <th>APELLIDO</th>
+                        <th>CARRERA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let al of alumnos">
+                        <td>{{al.codigo}}</td>
+                        <td>{{al.nombre}}</td>
+                        <td>{{al.apellido}}</td>
+                        <td>{{al.carrera}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
